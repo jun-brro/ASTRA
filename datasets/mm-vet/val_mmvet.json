@@ -1,0 +1,516 @@
+{
+    "v1_85": {
+        "imagename": "v1_85.jpg",
+        "question": "How many birds are there?",
+        "answer": "6",
+        "capability": [
+            "rec"
+        ],
+        "imagesource": "web"
+    },
+    "v1_120": {
+        "imagename": "v1_120.jpg",
+        "question": "Does the person to the left of the man appear to be sitting?",
+        "answer": "yes",
+        "capability": [
+            "rec",
+            "spat"
+        ],
+        "imagesource": "web"
+    },
+    "v1_94": {
+        "imagename": "v1_94.jpg",
+        "question": "What is the brand of this device?",
+        "answer": "MOTOROLA",
+        "capability": [
+            "ocr"
+        ],
+        "imagesource": "web"
+    },
+    "v1_46": {
+        "imagename": "v1_46.png",
+        "question": "What is the estimated average standing charge for the year 2023?",
+        "answer": "271",
+        "capability": [
+            "ocr",
+            "spat",
+            "math"
+        ],
+        "imagesource": "web"
+    },
+    "v1_197": {
+        "imagename": "v1_197.jpg",
+        "question": "What is this disease (give short introduction) and how to treat it?",
+        "answer": "It is early blight. Common on tomato and potato plants, early blight is caused by the fungus Alternaria solani and occurs throughout the United States. Symptoms first appear on the lower, older leaves as small brown spots with concentric rings that form a \u201cbull\u2019s eye\u201d pattern. As the disease matures, it spreads outward on the leaf surface causing it to turn yellow, wither and die. Eventually the stem, fruit and upper portion of the plant will become infected. Crops can be severely damaged.\n\nEarly blight overwinters on infected plant tissue and is spread by splashing rain, irrigation, insects and garden tools. The disease is also carried on tomato seeds and in potato tubers. In spite of its name, early blight can occur any time throughout the growing season. High temperatures (80-85\u02daF.) and wet, humid conditions promote its rapid spread. In many cases, poorly nourished or stressed plants are attacked.\n\nTreatment\nPrune or stake plants to improve air circulation and reduce fungal problems.\nMake sure to disinfect your pruning shears (one part bleach to 4 parts water) after each cut.\nKeep the soil under plants clean and free of garden debris. Add a layer of organic compost to prevent the spores from splashing back up onto vegetation.\nDrip irrigation and soaker hoses can be used to help keep the foliage dry.\nFor best control, apply copper-based fungicides early, two weeks before disease normally appears or when weather forecasts predict a long period of wet weather. Alternatively, begin treatment when disease first appears, and repeat every 7-10 days for as long as needed.\nContaining copper and pyrethrins, Bonide\u00ae Garden Dust is a safe, one-step control for many insect attacks and fungal problems. For best results, cover both the tops and undersides of leaves with a thin uniform film or dust. Depending on foliage density, 10 oz will cover 625 sq ft. Repeat applications every 7-10 days, as needed.\nSERENADE Garden is a broad spectrum, preventative bio-fungicide recommended for the control or suppression of many important plant diseases. For best results, treat prior to foliar disease development or at the first sign of infection. Repeat at 7-day intervals or as needed.\nRemove and destroy all garden debris after harvest and practice crop rotation the following year.\nBurn or bag infected plant parts. Do NOT compost.",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_81": {
+        "imagename": "v1_81.jpg",
+        "question": "What type of currency does this banknote represent?",
+        "answer": "Swede<OR>Kronor",
+        "capability": [
+            "rec"
+        ],
+        "imagesource": "web"
+    },
+    "v1_182": {
+        "imagename": "v1_182.jpg",
+        "question": "Can you give a short introduction to this painting?",
+        "answer": "The Birth of Venus is a painting by the Italian artist Sandro Botticelli, probably executed in the mid 1480s. It depicts the goddess Venus arriving at the shore after her birth, when she had emerged from the sea fully-grown (called Venus Anadyomene and often depicted in art). The painting is in the Uffizi Gallery in Florence, Italy.\n\nAlthough the two are not a pair, the painting is inevitably discussed with Botticelli's other very large mythological painting, the Primavera, also in the Uffizi. They are among the most famous paintings in the world, and icons of the Italian Renaissance; of the two, the Birth is better known than the Primavera. As depictions of subjects from classical mythology on a very large scale they were virtually unprecedented in Western art since classical antiquity, as was the size and prominence of a nude female figure in the Birth. It used to be thought that they were both commissioned by the same member of the Medici family, but this is now uncertain.\n\nThey have been endlessly analysed by art historians, with the main themes being: the emulation of ancient painters and the context of wedding celebrations (generally agreed), the influence of Renaissance Neo-Platonism (somewhat controversial), and the identity of the commissioners (not agreed). Most art historians agree, however, that the Birth does not require complex analysis to decode its meaning, in the way that the Primavera probably does. While there are subtleties in the painting, its main meaning is a straightforward, if individual, treatment of a traditional scene from Greek mythology, and its appeal is sensory and very accessible, hence its enormous popularity.",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_176": {
+        "imagename": "v1_176.jpg",
+        "question": "Can you give a short introduction to this movie?",
+        "answer": "The Godfather Part II is a 1974 American epic crime film produced and directed by Francis Ford Coppola. The film is partially based on the 1969 novel The Godfather by Mario Puzo, who co-wrote the screenplay with Coppola, and it is both a sequel and a prequel to the 1972 film The Godfather, presenting parallel dramas: one picks up the 1958 story of Michael Corleone (Al Pacino), the new Don of the Corleone family, protecting the family business in the aftermath of an attempt on his life; the prequel covers the journey of his father, Vito Corleone (Robert De Niro), from his Sicilian childhood to the founding of his family enterprise in New York City. The ensemble cast also features Robert Duvall, Diane Keaton, Talia Shire, Morgana King, John Cazale, Mariana Hill, and Lee Strasberg.",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_119": {
+        "imagename": "v1_119.jpg",
+        "question": "What is the color of the fence made of metal?",
+        "answer": "green",
+        "capability": [
+            "rec"
+        ],
+        "imagesource": "web"
+    },
+    "v1_187": {
+        "imagename": "v1_187.jpg",
+        "question": "Can you give a short introduction to this painting?",
+        "answer": "Emperor Taizong Receiving the Tibetan Envoy (also called \u6b65\u8f87\u56fe, B\u00f9ni\u01cen T\u00fa ) is a painting on silk by Yan Liben to show the friendly encounter between the Tang dynasty and Tibet. The painting is 129 centimetres (51 in) long by 38.5 centimetres (15.2 in) wide. Bunian Tu is in The Palace Museum in Beijing.",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_154": {
+        "imagename": "v1_154.png",
+        "question": "What is funny about this image?",
+        "answer": "There are a few things that people might find funny about this image:\\n\\n1. The contrast between the two images: On the left, we see two women who are very emotional and angry, while on the right, we see a cat who is calmly sitting at a dinner table.\\n\\n2. The absurdity of the cat's situation: It is not common to see a cat sitting at a dinner table with a plate of food in front of it, so this image is unexpected and ridiculous.\\n\\n3. The cat's expression: The cat appears to be frightened by the women's yelling, which adds to the humor of the image.",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_92": {
+        "imagename": "v1_92.jpg",
+        "question": "What are all the scene text in the image?",
+        "answer": "MR. WILLIAM SHAKESPEARES<AND>COMEDIES, HISTORIES, & TRAGEDIES.<AND>publifhed according to the True Originall Copies.",
+        "capability": [
+            "ocr"
+        ],
+        "imagesource": "web"
+    },
+    "v1_193": {
+        "imagename": "v1_193.jpg",
+        "question": "What is this disease (give short introduction) and how to treat it?",
+        "answer": "It is club root. Affecting most brassica crops (cabbage, broccoli, cauliflower, etc.), club root is a serious plant disease in North American home gardens. It is caused by the soil-borne fungus Plasmodiophora brassicae which infects susceptible plants through root hairs. Diseased roots become swollen, misshapen and deformed (clubbed) often cracking and rotting. As a result, plants have difficulty absorbing water and nutrients properly.\n\nPlants often grow poorly and wilt during the heat of the day; plants often revive during cool nights. Outer leaves may turn yellow, purple or brown. Club root will reduce yields and can cause total crop failure.\n\nFungal spores can be spread by wind, water and garden tools. Disease development can occur over a wide range of conditions, but is favored by excessive moisture, low soil pH and soil temperatures between 64 and 77\u02daF. Spores can survive in the soil for as many as 10 years.\n\nTreatment\n1. Fungicides will NOT treat this soil-dwelling micro-organism.\n2. Choose resistant cultivars when possible.\n3. Try to prevent the occurrence of this disease by keeping a clean garden and rotating crops.\n4. Keep in mind that the disease spores can persist in the soil for up to 20 years. If club root is present you may want to solarize the soil.*\n5. Control susceptible weeds \u2014 mustard, radish, shepherd\u2019s purse \u2014 that may be infected to reduce potential buildup of the disease.\n6. Carefully remove infected plants and sterilize garden tools (one part bleach to 4 parts water) after use.\n7. Raise your soil\u2019s pH to a more alkaline 7.2 by mixing oyster shell or dolomite lime into your garden in the fall. Simple and affordable soil test kits are available to check pH often.",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_20": {
+        "imagename": "v1_20.jpg",
+        "question": "What is the spatial relation between the frisbee and the man?",
+        "answer": "above the man<OR>top left",
+        "capability": [
+            "rec",
+            "spat"
+        ],
+        "imagesource": "web"
+    },
+    "v1_3": {
+        "imagename": "v1_3.png",
+        "question": "What is the answer to the bottom left equation?",
+        "answer": "12<OR>=12",
+        "capability": [
+            "ocr",
+            "spat",
+            "math"
+        ],
+        "imagesource": "web"
+    },
+    "v1_34": {
+        "imagename": "v1_34.jpg",
+        "question": "What should I do before cutting herbs, sausage, and mushrooms?",
+        "answer": "tilt pan slightly",
+        "capability": [
+            "ocr",
+            "spat"
+        ],
+        "imagesource": "web"
+    },
+    "v1_153": {
+        "imagename": "v1_153.jpg",
+        "question": "What is funny about this image?",
+        "answer": "It is a cartoon of a rhinoceros painting a picture and each picture has its rhino horn because the rhino horn grows in front of its eyes. The caption \"You see the world as you are!\" is a playful commentary on how our perspective shapes our perception of the world.",
+        "capability": [
+            "rec",
+            "ocr",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_177": {
+        "imagename": "v1_177.jpg",
+        "question": "Can you give a short introduction to this movie?",
+        "answer": "Farewell My Concubine is a 1993 Chinese historical drama film directed by Chen Kaige, starring Leslie Cheung, Gong Li and Zhang Fengyi. Adapted for the screen by Lu Wei based on the novel by Lilian Lee, the film is set in a politically tumultuous 20th-century China, from the early days of the Republic of China to the aftermath of the Cultural Revolution. It chronicles the troubled relationships between two Peking opera actors and lifelong friends Cheng Dieyi (Cheung) and Duan Xiaolou (Zhang), and Xiaolou's wife Juxian (Gong).",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_67": {
+        "imagename": "v1_67.png",
+        "question": "Which one is unsweetened?",
+        "answer": "oat",
+        "capability": [
+            "ocr",
+            "spat"
+        ],
+        "imagesource": "web"
+    },
+    "v1_87": {
+        "imagename": "v1_87.jpg",
+        "question": "How many books are there?",
+        "answer": "63",
+        "capability": [
+            "rec"
+        ],
+        "imagesource": "web"
+    },
+    "v1_21": {
+        "imagename": "v1_21.jpg",
+        "question": "Which car is on the parking spot 33?",
+        "answer": "no<OR>empty",
+        "capability": [
+            "rec",
+            "ocr",
+            "spat"
+        ],
+        "imagesource": "web"
+    },
+    "v1_95": {
+        "imagename": "v1_95.jpg",
+        "question": "What is the license plate number?",
+        "answer": "AED-632",
+        "capability": [
+            "ocr"
+        ],
+        "imagesource": "web"
+    },
+    "v1_113": {
+        "imagename": "v1_113.jpg",
+        "question": "Are all of the cats the same color?",
+        "answer": "no",
+        "capability": [
+            "rec"
+        ],
+        "imagesource": "web"
+    },
+    "v1_79": {
+        "imagename": "v1_79.jpg",
+        "question": "What is the face value of this banknote?",
+        "answer": "five<OR> 5",
+        "capability": [
+            "rec",
+            "know"
+        ],
+        "imagesource": "web"
+    },
+    "v1_138": {
+        "imagename": "v1_138.jpg",
+        "question": "Where are the persons? Answer it and give the rationale.",
+        "answer": "They are in a college classroom. I think so because he young woman appears to be college age, and they are surrounded by desks and chairs.",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "vcr2542"
+    },
+    "v1_192": {
+        "imagename": "v1_192.jpg",
+        "question": "What is this disease (give short introduction) and how to treat it?",
+        "answer": "It is Brown rot (Monilinia fructicola), the most common fungal disease affecting the blossoms and fruit of almonds, apricots, cherries, peaches and plums. It overwinters in mummified fruit (on the tree and on the ground) and infected twigs.\n\nThe disease first infects blossoms in spring and grows back into the small branches to cause cankers that can kill stems. Large numbers of flower-bearing stems are killed when the disease is severe. Dead flowers often remain attached into the summer. Developing or mature fruits show circular or brown spots that spread rapidly over the surface and light gray masses of spores are produced on the rotted areas. Rotted tissue remains relatively firm and dry.\n\nBrown rot spores are carried by wind, rain and insects to the open or unopened blossoms and young shoots. If water is present \u2014 either from rain, dew or watering \u2014 on the flower surface the spores can germinate and penetrate the plant. Disease development takes place over a wide temperature range and flowers can be infected from the time buds open until petals fall. Under favorable conditions, brown rot spreads quickly and an entire crop can be completely destroyed on the tree.\n\nTreatment\n1. Choose resistant varieties whenever possible.\n2. Prompt removal and destruction of infected plant parts helps breaks the life cycle of the disease in individual trees and small orchards, and may be sufficient to keep brown rot below damaging levels.\n3. It is important to rake up and remove any fallen fruit or debris from under trees.\n4. Prune trees occasionally to improve air circulation. Also, water from below to keep from wetting blossoms, foliage and fruit.\n5. Use Tanglefoot\u00ae Pruning Sealer to seal all cuts and wounds and protect against insects and disease organisms.\n6. Ready to use copper fungicides or sulfur powders should be applied weekly to infected trees starting when the blossoms are just beginning to open and continuing throughout the growing season. If at all possible, time applications so that 12 hours of dry weather follows application.\n7. Organocide\u00ae Plant Doctor is an earth-friendly systemic fungicide that works its way through the entire plant to combat a large number of diseases on ornamentals, turf, fruit and more. Apply as a foliar spray (1 tsp/ gallon of water) to combat this destructive stone fruit problem.\n8. Containing sulfur and pyrethrins, Bonide\u00ae Orchard Spray is a safe, one-hit concentrate for insect attacks and fungal problems. For best results, apply as a protective spray (2.5 oz/ gallon) early in the season. If disease, insects or wet weather are present, mix 5 oz in one gallon of water. Thoroughly spray all parts of the plant, especially new shoots.",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_72": {
+        "imagename": "v1_72.png",
+        "question": "What is the name of this dish?",
+        "answer": "pad thai",
+        "capability": [
+            "rec"
+        ],
+        "imagesource": "web"
+    },
+    "v1_144": {
+        "imagename": "v1_144.jpg",
+        "question": "Why does the woman have both of her hands in the air? Answer it and give the rationale.",
+        "answer": "She just shot a basketball. I think so because Her arms are angled for a basketball shot and they are in a basketball arena.",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "vcr3076"
+    },
+    "v1_206": {
+        "imagename": "v1_206.jpg",
+        "question": "Can you give a short introduction to this person?",
+        "answer": "Lionel Andr\u00e9s Messi (Spanish pronunciation: [ljo\u02c8nel an\u02c8d\u027ees \u02c8mesi] (listen); born 24 June 1987), also known as Leo Messi, is an Argentine professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and captains the Argentina national team. Widely regarded as one of the greatest players of all time, Messi has won a record seven Ballon d'Or awards and a record six European Golden Shoes, and in 2020 he was named to the Ballon d'Or Dream Team. Until leaving the club in 2021, he had spent his entire professional career with Barcelona, where he won a club-record 34 trophies, including ten La Liga titles, seven Copa del Rey titles and the UEFA Champions League four times. With his country, he won the 2021 Copa Am\u00e9rica and the 2022 FIFA World Cup. A prolific goalscorer and creative playmaker, Messi holds the records for most goals in La Liga (474), most hat-tricks in La Liga (36) and the UEFA Champions League (eight), and most assists in La Liga (192) and the Copa Am\u00e9rica (17). He also has the most international goals by a South American male (102). Messi has scored over 800 senior career goals for club and country, and has the most goals by a player for a single club (672).",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_181": {
+        "imagename": "v1_181.jpg",
+        "question": "Can you give a short introduction to this painting?",
+        "answer": "The Kiss (in German Der Kuss) is an oil-on-canvas painting with added gold leaf, silver and platinum by the Austrian Symbolist painter Gustav Klimt.It was painted at some point in 1907 and 1908, during the height of what scholars call his \"Golden Period\". It was exhibited in 1908 under the title Liebespaar (the lovers) as stated in the catalogue of the exhibition. The painting depicts a couple embracing each other, their bodies entwined in elaborate beautiful robes decorated in a style influenced by the contemporary Art Nouveau style and the organic forms of the earlier Arts and Crafts movement.\n\nThe painting now hangs in the \u00d6sterreichische Galerie Belvedere museum in the Belvedere, Vienna, and is considered a masterpiece of Vienna Secession (local variation of Art Nouveau) and Klimt's most popular work after Portrait of Adele Bloch-Bauer I. It is considered by many as a famous work of art.",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_121": {
+        "imagename": "v1_121.jpg",
+        "question": "Is the plate of the table both dirty and silver?",
+        "answer": "no",
+        "capability": [
+            "rec"
+        ],
+        "imagesource": "web"
+    },
+    "v1_36": {
+        "imagename": "v1_36.jpg",
+        "question": "What should we add in the third step?",
+        "answer": "milk",
+        "capability": [
+            "rec",
+            "ocr",
+            "spat"
+        ],
+        "imagesource": "web"
+    },
+    "v1_23": {
+        "imagename": "v1_23.png",
+        "question": "What is the price for tomatoes?",
+        "answer": "eight<OR>8.0",
+        "capability": [
+            "rec",
+            "ocr",
+            "spat"
+        ],
+        "imagesource": "web"
+    },
+    "v1_185": {
+        "imagename": "v1_185.jpg",
+        "question": "Can you give a short introduction to this painting?",
+        "answer": "Along the River During the Qingming Festival (Qingming Shanghe Tu) is a handscroll painting by the Song dynasty painter Zhang Zeduan (1085\u20131145) and copied many times in the following centuries. It captures the daily life of people and the landscape of the capital, Bianjing (present-day Kaifeng) during the Northern Song. The theme is often said to celebrate the festive spirit and worldly commotion at the Qingming Festival, rather than the holiday's ceremonial aspects, such as tomb sweeping and prayers. Read right to left, as a viewer unrolled it, successive scenes reveal the lifestyle of all levels of the society from rich to poor as well as economic activities in rural areas and the city, and offer glimpses of period clothing and architecture. The painting is considered to be the most renowned work among all Chinese paintings, and it has been called \"China's Mona Lisa.\"",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_217": {
+        "imagename": "v1_217.png",
+        "question": "The diagram below shows how the Australian Bureau of Meteorology collects up-to-the-minute information on the weather in order to produce reliable forecasts.\n\nWrite a report for a university lecturer describing the information shown below. \n\nYou should write at least 150 words.",
+        "answer": "The figure illustrates the process used by the Australian Bureau of Meteorology to forecast the weather.\n\nThere are four stages in the process, beginning with the collection of information about the weather. This information is then analysed, prepared for presentation, and finally broadcast to the public.\n\nLooking at the first and second stages of the process, there are three ways of collecting weather data and three ways of analysing it. Firstly, incoming information can be received by satellite and presented for analysis as a satellite photo. The same data can also be passed to a radar station and presented on a radar screen or synoptic chart. Secondly, incoming information may be collected directly by radar and analysed on a radar screen or synoptic chart. Finally, drifting buoys also receive data which can be shown on a synoptic chart.\n\nAt the third stage of the process, the weather broadcast is prepared on computers. Finally, it is delivered to the public on television, on the radio, or as a recorded telephone announcement.",
+        "capability": [
+            "rec",
+            "ocr",
+            "gen",
+            "spat"
+        ],
+        "imagesource": "web"
+    },
+    "v1_18": {
+        "imagename": "v1_18.jpg",
+        "question": "What is located to the right of the shampoo?",
+        "answer": "conditioner",
+        "capability": [
+            "ocr",
+            "spat"
+        ],
+        "imagesource": "web"
+    },
+    "v1_162": {
+        "imagename": "v1_162.jpg",
+        "question": "How to cook this dish?",
+        "answer": "This dish is called \"Authentic Chinese Egg Rolls\". These Chinese egg rolls come from my mom who is the best cook ever \u2014 and I am a picky eater. If I like this, then you will. This is very authentic because my family is Chinese and I am too. This recipe is at least 300 years old in the Ling family.\n\n\nPrep Time:\n1 hr\nCook Time:\n30 mins\nAdditional Time:\n1 hr\nTotal Time:\n2 hrs 30 mins\nServings:\n20\nYield:\n20 egg rolls\n\n\n Ingredients\n\n    4 teaspoons vegetable oil, divided\n\n    3 large eggs, beaten\n\n    1 medium head cabbage, finely shredded\n\n    \u00bd carrot, julienned\n\n    1 pound Chinese barbequed or roasted pork, cut into matchsticks\n\n    1 (8 ounce) can shredded bamboo shoots\n\n    1 cup dried, shredded wood ear mushroom, rehydrated\n\n    2 green onions, thinly sliced\n\n    2 \u00bd teaspoons soy sauce\n\n    1 teaspoon salt\n\n    1 teaspoon sugar\n\n    \u00bd teaspoon monosodium glutamate (MSG)\n\n    1 (14 ounce) package egg roll wrappers\n\n    1 egg white, beaten\n\n    4 cups oil for frying, or as needed\n\n Directions\n\nStep 1\n    Heat 1 teaspoon vegetable oil in a wok or large skillet over medium heat. Pour in beaten eggs and cook, without stirring, until firmed up. Flip eggs over and cook for an additional 20 seconds to firm the other side. Set egg pancake aside to cool, then slice into thin strips.\n\nStep 2\n    Heat remaining vegetable oil in a wok or large skillet over high heat. Stir in cabbage and carrot; cook for 2 minutes to wilt. Add pork, bamboo shoots, mushroom, green onions, soy sauce, salt, sugar, and MSG; continue cooking until vegetables soften, about 6 minutes. Stir in sliced egg, then spread the mixture out onto a pan, and refrigerate until cold, about 1 hour.\n\nStep 3\n    To assemble the egg rolls: Place a wrapper onto your work surface with one corner pointing towards you. Place about 3 tablespoons of cooled filling in a heap onto the bottom third of the wrapper. Brush a little beaten egg white onto the top two edges of the wrapper, then fold the bottom corner over the filling and roll firmly to the halfway point. Fold the left and right sides snugly over the egg roll, then continue rolling until the top corners seal the egg roll with the egg white. Repeat with remaining egg roll wrappers, covering finished egg rolls with plastic wrap to keep from drying out.\n\nStep 4\n    Heat about 6 inches of oil in a wok or deep-fryer to 350 degrees F (175 degrees C).\n\nStep 5\n    Fry egg rolls 3 or 4 at a time until golden brown, 5 to 7 minutes. Drain on paper towels. ",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_76": {
+        "imagename": "v1_76.png",
+        "question": "What is the name of this landmark?",
+        "answer": "Trevi Fountain",
+        "capability": [
+            "rec"
+        ],
+        "imagesource": "web"
+    },
+    "v1_171": {
+        "imagename": "v1_171.jpg",
+        "question": "Can you give a short introduction to this movie?",
+        "answer": "Twelve Angry Men is an American courtroom drama written by Reginald Rose concerning the jury of a homicide trial. It was broadcast initially as a television play in 1954. The following year it was adapted for the stage. It was adapted for a film of the same name, directed by Sidney Lumet and released in 1957. Since then it has been given numerous remakes, adaptations, and tributes.",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_188": {
+        "imagename": "v1_188.jpg",
+        "question": "What is this disease (give short introduction) and how to treat it?",
+        "answer": "Cedar apple rust (Gymnosporangium juniperi-virginianae) is a fungal disease that requires juniper plants to complete its complicated two year life-cycle. Spores overwinter as a reddish-brown gall on young twigs of various juniper species. In early spring, during wet weather, these galls swell and bright orange masses of spores are blown by the wind where they infect susceptible apple and crab-apple trees. The spores that develop on these trees will only infect junipers the following year. From year to year, the disease must pass from junipers to apples to junipers again; it cannot spread between apple trees.\n\nOn apple and crab-apple trees, look for pale yellow pinhead sized spots on the upper surface of the leaves shortly after bloom. These gradually enlarge to bright orange-yellow spots which make the disease easy to identify. Orange spots may develop on the fruit as well. Heavily infected leaves may drop prematurely.\n\nTreatment\n1. Choose resistant cultivars when available.\n2. Rake up and dispose of fallen leaves and other debris from under trees.\n3. Remove galls from infected junipers. In some cases, juniper plants should be removed entirely.\n4. Apply preventative, disease-fighting fungicides labeled for use on apples weekly, starting with bud break, to protect trees from spores being released by the juniper host. This occurs only once per year, so additional applications after this springtime spread are not necessary.\n5. On juniper, rust can be controlled by spraying plants with a copper solution (0.5 to 2.0 oz/ gallon of water) at least four times between late August and late October.\n6. Safely treat most fungal and bacterial diseases with SERENADE Garden. This broad spectrum bio-fungicide uses a patented strain of Bacillus subtilis that is registered for organic use. Best of all, SERENADE is completely non-toxic to honey bees and beneficial insects.\n7. Containing sulfur and pyrethrins, Bonide\u00ae Orchard Spray is a safe, one-hit concentrate for insect attacks and fungal problems. For best results, apply as a protective spray (2.5 oz/ gallon) early in the season. If disease, insects or wet weather are present, mix 5 oz in one gallon of water. Thoroughly spray all parts of the plant, especially new shoots.\n8. Contact your local Agricultural Extension office for other possible solutions in your area.",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_129": {
+        "imagename": "v1_129.jpg",
+        "question": "On the right desk, what is to the left of the laptop? ",
+        "answer": "table lamp<OR>desk lamp",
+        "capability": [
+            "rec",
+            "spat"
+        ],
+        "imagesource": "web"
+    },
+    "v1_189": {
+        "imagename": "v1_189.jpg",
+        "question": "What is this disease (give short introduction) and how to treat it?",
+        "answer": "Anthracnose. It is caused by fungi in the genus Colletotrichum, a common group of plant pathogens that are responsible for diseases on many plant species. Infected plants develop dark, water soaked lesions on stems, leaves or fruit. The centers of these lesions often become covered with pink, gelatinous masses of spores especially during moist, warm weather. Anthracnose can reduce a beautiful harvest into rotted waste in just a few days.\n\nThe fungal disease overwinters in and on seeds, soil and garden debris. Cool wet weather promotes its development, and the optimum temperature for continued growth of the spores is between 75-85\u02daF. Moisture is required for development and germination of the fungus as well as for infection of the plant. It is spread by wind, rain, insects and garden tools.\n\nTreatment\n1. Choose resistant plant varieties when possible and use western grown seeds which have not been exposed to the disease.\n2. If this fungal problem is common, do NOT save your own seed from plantings.\n3. To avoid spreading the disease, keep out of gardens when plants are wet and make sure to disinfect all garden tools (one part bleach to 4 parts water) after use.\n4. Do not compost infected leaves, fruit or stems and thoroughly clean up garden areas in the fall, after harvest, to reduce over wintering sites for the fungal spores.\n5. Safely treat most fungal and bacterial diseases with SERENADE Garden. This broad spectrum bio-fungicide uses a patented strain of Bacillus subtilis that is registered for organic use. Best of all, SERENADE is completely non-toxic to honey bees and beneficial insects.\n6. Liquid copper sprays and sulfur powders should be applied weekly, starting when foliage begins to develop in the early spring and continuing throughout the growing season. Spray early in the day, and avoid applications during hot weather. Seeds may also be treated prior to planting.\n7. Neem oil spray is an organic, multi-purpose fungicide/insecticide/miticide that kills eggs, larvae and adult stages of insects as well as prevents fungal attack on plants. Apply early, at the first sign of spring budding, every 7-14 days as a preventative measure or on a 7-day schedule until existing problems are eliminated.",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_86": {
+        "imagename": "v1_86.jpg",
+        "question": "How many tomatoes are there?",
+        "answer": "5",
+        "capability": [
+            "rec"
+        ],
+        "imagesource": "web"
+    },
+    "v1_99": {
+        "imagename": "v1_99.png",
+        "question": "Which are producers in this food web?",
+        "answer": "Phytoplankton<AND>Seaweed",
+        "capability": [
+            "ocr",
+            "know",
+            "spat"
+        ],
+        "imagesource": "web"
+    },
+    "v1_130": {
+        "imagename": "v1_130.jpg",
+        "question": "Does the man ride a horse?",
+        "answer": "no",
+        "capability": [
+            "rec"
+        ],
+        "imagesource": "web"
+    },
+    "v1_105": {
+        "imagename": "v1_105.png",
+        "question": "In which country was this photo taken?",
+        "answer": "australia",
+        "capability": [
+            "rec",
+            "know"
+        ],
+        "imagesource": "web"
+    },
+    "v1_178": {
+        "imagename": "v1_178.jpg",
+        "question": "Can you give a short introduction to this painting?",
+        "answer": "The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci.\n\nConsidered an archetypal masterpiece of the Italian Renaissance,it has been described as \"the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world\". The painting's novel qualities include the subject's enigmatic expression, monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_180": {
+        "imagename": "v1_180.jpg",
+        "question": "Can you give a short introduction to this painting?",
+        "answer": "The Starry Night is an oil-on-canvas painting by the Dutch Post-Impressionist painter Vincent van Gogh. Painted in June 1889, it depicts the view from the east-facing window of his asylum room at Saint-R\u00e9my-de-Provence, just before sunrise, with the addition of an imaginary village.It has been in the permanent collection of the Museum of Modern Art in New York City since 1941, acquired through the Lillie P. Bliss Bequest. Widely regarded as Van Gogh's magnum opus, The Starry Night is one of the most recognizable paintings in Western art.",
+        "capability": [
+            "rec",
+            "know",
+            "gen"
+        ],
+        "imagesource": "web"
+    },
+    "v1_91": {
+        "imagename": "v1_91.jpg",
+        "question": "What are all the scene text in the image?",
+        "answer": "5:30PM<AND>88%<AND>Mario Kart 8 Deluxe<AND>MARIO KART 8 DELUXE<AND>SUPER MARIO ODYSSEY<AND>THE LEGEND OF ZELDA<AND>BREATH OF WILD<AND>Options<AND>Start",
+        "capability": [
+            "ocr"
+        ],
+        "imagesource": "web"
+    },
+    "v1_74": {
+        "imagename": "v1_74.jpg",
+        "question": "What does this factory make?",
+        "answer": "camera",
+        "capability": [
+            "ocr"
+        ],
+        "imagesource": "web"
+    }
+}

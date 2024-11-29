@@ -1,0 +1,16 @@
+# Ignore log files
+*.log
+
+# Ignore Python artifacts
+__pycache__/
+*.pyc
+
+# Ignore macOS files
+.DS_Store
+
+# Ignore environment files
+.env
+
+# Ignore build directories
+/build/
+/dist/
