@@ -45,6 +45,10 @@ Following the dataset split in [Schaeffer et al.](https://github.com/RylanSchaef
 + Evaluation datasets: \
 The `eval.csv` file is equally divided to create validation and set sets. You can run the script `split_jb_set.py` in `./datasets/harmful_corpus` to generate the validatin and test sets for this setup.
 
+##### TODO
+
+- [ ] Release adversarial images used in the Transferability experiments
+
 ### Structured-based Attacks
 
 Please download the [MM-SafetyBench](https://github.com/isXinLiu/MM-SafetyBench) and place it in `./datasets`. We randomly sample 10 items from the 01-07 & 09 scenarios to construct the test set items in `./datasets/MM-SafetyBench/mmsafety_test.json`.
@@ -75,7 +79,6 @@ To evaluate the performance of adaptive steering (e.g., in Qwen2-VL), run the fo
 ```bash
 CUDA_VISIBLE_DEVICES=0 python ./steer_eval/steering_qwen_toxic.py --attack_type constrain_16 --alpha 7 --eval test --steer_layer 14
 CUDA_VISIBLE_DEVICES=0 python ./steer_eval/steering_qwen_jb.py --attack_type constrain_16 --alpha 7 --eval test --steer_layer 14
-CUDA_VISIBLE_DEVICES=0 python ./steer_eval/steering_qwen_jb_ood.py --attack_type constrain_16 --alpha 7 --eval test --steer_layer 14
 CUDA_VISIBLE_DEVICES=0 python ./steer_eval/steering_qwen_typo.py --alpha 7 --eval test --steer_layer 14
 ```
 You can set `attack_type` to `constrain_16`, `constrain_32`, `constrain_64`, or `unconstrain`. Detailed option can be found in `parse_args()` function of each Python file.
