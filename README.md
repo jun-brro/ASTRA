@@ -37,7 +37,7 @@ Then, run the script `split_toxicity_set.py` located in `./datasets/harmful_corp
 
 #### Jailbreak
 
-We mainly use text queries from AdvBench and Anthropic-HHH datasets for this setup.
+We mainly use text queries from AdvBench and Anthropic-HHH datasets in our main experiments.
 
 + Textual queries for steering vectors construction: \
 Following the dataset split in [Schaeffer et al.](https://github.com/RylanSchaeffer/AstraFellowship-When-Do-VLM-Image-Jailbreaks-Transfer/tree/main/prompts_and_targets), we use `train.csv` in `AdvBench` to perform image attribution.
@@ -45,9 +45,7 @@ Following the dataset split in [Schaeffer et al.](https://github.com/RylanSchaef
 + Evaluation datasets: \
 The `eval.csv` file is equally divided to create validation and set sets. You can run the script `split_jb_set.py` in `./datasets/harmful_corpus` to generate the validatin and test sets for this setup.
 
-##### TODO
-
-- [ ] Release adversarial images used in the Transferability experiments
+In transferability experiments, we use the text queries from [JailbreakBench](https://github.com/JailbreakBench/jailbreakbench) to attack OOD images and evaluate the generalization ability of our defense. The queries can be found in `./datasets/harmful_corpus/JBB`. 
 
 ### Structured-based Attacks
 
@@ -79,6 +77,7 @@ To evaluate the performance of adaptive steering (e.g., in Qwen2-VL), run the fo
 ```bash
 CUDA_VISIBLE_DEVICES=0 python ./steer_eval/steering_qwen_toxic.py --attack_type constrain_16 --alpha 7 --eval test --steer_layer 14
 CUDA_VISIBLE_DEVICES=0 python ./steer_eval/steering_qwen_jb.py --attack_type constrain_16 --alpha 7 --eval test --steer_layer 14
+CUDA_VISIBLE_DEVICES=0 python ./steer_eval/steering_qwen_jb_ood.py --attack_type constrain_16 --alpha 7 --eval test --steer_layer 14 --attack_algorithm apgd
 CUDA_VISIBLE_DEVICES=0 python ./steer_eval/steering_qwen_typo.py --alpha 7 --eval test --steer_layer 14
 ```
 You can set `attack_type` to `constrain_16`, `constrain_32`, `constrain_64`, or `unconstrain`. Detailed option can be found in `parse_args()` function of each Python file.

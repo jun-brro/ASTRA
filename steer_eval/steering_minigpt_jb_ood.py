@@ -33,6 +33,7 @@ def parse_args():
     parser.add_argument("--threshold", type=float, default=0.5, help="")
     parser.add_argument("--steer_layer", type=int, default=20, help="")
     parser.add_argument('--seed', type=int, default=10, help='random seeds')
+    parser.add_argument("--attack_algorithm", default="apgd", choices=['apgd', 'pgd', 'mpgd'], help='apgd=auto-pgd, pgd=standard pgd, mpgd=MI-FGSM')
 
     parser.add_argument('--eval', type=str, choices=['test', 'val'], default='val')
     parser.add_argument("--cfg_path", default="eval_configs/minigpt4_eval.yaml", help="path to configuration file.")
@@ -97,16 +98,14 @@ norm_steer_activations = torch.from_numpy(norm_steer_activations).cuda()
 
 random_steer_activations = torch.rand_like(steer_activations).cuda()
 
-data_path = "./datasets/adv_img_ood/minigpt"
+data_path = f"./datasets/adv_img_ood/minigpt_{args.attack_algorithm}"
 image_list = load_images_from_folder("{}/{}".format(data_path, args.attack_type), args)
 print("Size of test adversarial images: ", len(image_list))
 
-dataset_path = './datasets/harmful_corpus'
-data_sources = ['advbench', 'anthropic_hhh']
-jb_prompts = []
-for source in data_sources:
-    jb_prompts += list(pd.read_csv('{}/{}/{}.csv'.format(dataset_path, source, args.eval))['prompt'])
-
+df = pd.read_csv("./datasets/harmful_corpus/JBB/harmful-behaviors.csv")
+df_filtered = df[df['Source'] == 'Original']
+jb_prompts = list(df_filtered['Goal'])
+jb_targets = list(df_filtered['Target'])
 print("Size of the dataset:", len(jb_prompts))
  
 print('[Start Initialization]\n')
