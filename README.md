@@ -66,6 +66,11 @@ CUDA_VISIBLE_DEVICES=0 python ./extract_act/extracting_activations_qwen_jb.py
 ```
 (Note: when performing image attribution on LLaVA-v1.5 or MiniGPT-4, please comment out line 1 in `./image_attr/__init__.py` to avoid potential bugs caused by differences in environments.)
 
+To obtain the reference activations (e.g., for Qwen2-VL), run the following commands:
+```bash
+CUDA_VISIBLE_DEVICES=0 python ./extract_act/extracting_activations_qwen_ref.py
+```
+
 ### Activations
 
 We provide steering vectors for each setup in `./activations/*/jb` and  `./activations/*/toxic`. Calibration activations are available in `./activations/*/reference`.
