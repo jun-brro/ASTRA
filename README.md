@@ -24,7 +24,14 @@ pip install -r requirements_qwen.txt
 
 ### Perturbation-based Attacks
 
-We provide adversarial images for perturbation-based attack setups in `./datasets/adv_img_*`
+#### Preparing adversarial images
+
+**If you want to generate adversarial images on your own**, please refer to [this excellent repo](https://github.com/Unispac/Visual-Adversarial-Examples-Jailbreak-Large-Language-Models) which provides the code to attack Llava and MiniGPT-4. If you need code to attack Qwen2-VL, please send me an email (hanw14@illinois.edu).
+
+In constructing the steering vectors, we generate universal adversarial images using PGD without explicitly providing malicious instructions. During evaluation, our defense approach could effectively defend perturbation-based attacks regardless of whether attackers include malicious instructions during the adversarial image generation process.
+
+
+**If you want to follow the setup in our paper**, we have already provided adversarial images for perturbation-based attack setups in `./datasets/adv_img_*`.
 
 #### Toxicity
 
