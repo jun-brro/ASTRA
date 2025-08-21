@@ -49,7 +49,7 @@ for index in range(len(image_list)):
     text_prompt_template = processor.apply_chat_template(
                 messages, tokenize=False, add_generation_prompt=True
             )
-    with torch.no_grad(), torch.cuda.amp.autocast():  
+    with torch.no_grad(), torch.amp.autocast('cuda'):  
 
         inputs = processor(text=[text_prompt_template], images=[reference_img], return_tensors="pt").to("cuda", torch.float16)
         index_input_ids = inputs["input_ids"].shape[1]

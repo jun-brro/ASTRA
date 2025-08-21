@@ -33,6 +33,8 @@ def parse_args():
 
 args = parse_args()
 
+os.makedirs('./results/responses/qwen/jb_ood/', exist_ok=True)
+
 print("Experimental Args ======>>> ", args)
 activations_by_wrapper = torch.load("./activations/qwen/reference/reference_activations.pt")
 reference_activations = []
@@ -112,7 +114,7 @@ for index, jb_prompt in tqdm(enumerate(jb_prompts)):
                     messages, tokenize=False, add_generation_prompt=True
                 )
 
-    with torch.no_grad(), torch.cuda.amp.autocast():        
+    with torch.no_grad(), torch.amp.autocast('cuda'):        
         def create_custom_forward_hook(steer_vector, reference_vector, steer_type, alpha):
             def custom_forward_hook(module, input, output):     
                 R_feat = output[0][:, -1, :]
@@ -136,7 +138,7 @@ for index, jb_prompt in tqdm(enumerate(jb_prompts)):
         alphas = [0, args.alpha]
         for i, (steer_type, alpha) in enumerate(zip(steer_types, alphas)):
             custom_hook = create_custom_forward_hook(steer_activations, reference_activations, steer_type, alpha)
-            hook = model.base_model.layers[args.steer_layer-1].register_forward_hook(custom_hook)
+            hook = model.language_model.layers[args.steer_layer-1].register_forward_hook(custom_hook)
             inputs = processor(text=[query], images=[adv_img], return_tensors="pt").to("cuda", torch.float16)
             generate_ids = model.generate(**inputs, do_sample=True, max_length=512, temperature=0.2, top_p=0.9,)
             response = processor.decode(generate_ids[0, inputs["input_ids"].shape[1]:], skip_special_tokens=True)

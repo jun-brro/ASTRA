@@ -40,7 +40,7 @@ for attack_type in attack_types:
 
     for index, (query, img, attr, mask) in enumerate(zip(data_query, data_adv_img, data_adv_img_attr, data_adv_img_mask)):
         query = 'USER: <image>\nASSISTANT:'
-        with torch.no_grad(), torch.cuda.amp.autocast():  
+        with torch.no_grad(), torch.amp.autocast('cuda'):  
             inputs = processor(text=[query]*2, images=[img, mask], return_tensors="pt").to("cuda", torch.float16)
             output = model(**inputs, output_hidden_states=True)
 

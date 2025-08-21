@@ -14,3 +14,10 @@ __pycache__/
 # Ignore build directories
 /build/
 /dist/
+
+*.tsv
+scripts/
+results/
+mm-vet/
+MM-SafetyBench/
+harmful_corpus/

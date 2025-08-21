@@ -112,7 +112,7 @@ for index, (key, line) in tqdm(enumerate(questions.items()), total=len(questions
 
     image = Image.open(os.path.join(image_folder, line["imagename"])).convert('RGB')
 
-    with torch.no_grad(), torch.cuda.amp.autocast(): 
+    with torch.no_grad(), torch.amp.autocast('cuda'): 
 
         def create_custom_forward_hook(steer_vector, reference_vector, steer_type, alpha):
             def custom_forward_hook(module, input, output):
@@ -140,7 +140,7 @@ for index, (key, line) in tqdm(enumerate(questions.items()), total=len(questions
         alphas = [args.alpha, 0]
         for i, (steer_type, alpha) in enumerate(zip(steer_types, alphas)):
             custom_hook = create_custom_forward_hook(steer_activations, reference_activations, steer_type, alpha)
-            hook = model.llama_model.base_model.layers[args.steer_layer-1].register_forward_hook(custom_hook)
+            hook = model.llama_model.language_model.layers[args.steer_layer-1].register_forward_hook(custom_hook)
             
             img_prompt = [processor(image).unsqueeze(0).to('cuda')]
             prompt_wrap = prompt_wrapper.Prompt(model=model, text_prompts=[query], img_prompts=[img_prompt])

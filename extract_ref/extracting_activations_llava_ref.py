@@ -38,7 +38,7 @@ for index in range(len(image_list)):
     reference_img = image_list[index]
     query = 'USER: <image>\nWhat is the image about?\nASSISTANT:'
 
-    with torch.no_grad(), torch.cuda.amp.autocast():  
+    with torch.no_grad(), torch.amp.autocast('cuda'):  
 
         inputs = processor(text=[query], images=[reference_img], return_tensors="pt").to("cuda", torch.float16)
         index_input_ids = inputs["input_ids"].shape[1]

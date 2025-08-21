@@ -110,7 +110,7 @@ for index, toxic_prompt in tqdm(enumerate(toxic_prompts)):
                     messages, tokenize=False, add_generation_prompt=True
                 )
 
-    with torch.no_grad(), torch.cuda.amp.autocast():        
+    with torch.no_grad(), torch.amp.autocast('cuda'):        
         def create_custom_forward_hook(steer_vector, reference_vector, steer_type, alpha):
             def custom_forward_hook(module, input, output):     
                 R_feat = output[0][:, -1, :]
@@ -134,7 +134,7 @@ for index, toxic_prompt in tqdm(enumerate(toxic_prompts)):
         alphas = [0, args.alpha]
         for i, (steer_type, alpha) in enumerate(zip(steer_types, alphas)):
             custom_hook = create_custom_forward_hook(steer_activations, reference_activations, steer_type, alpha)
-            hook = model.base_model.layers[args.steer_layer-1].register_forward_hook(custom_hook)
+            hook = model.language_model.layers[args.steer_layer-1].register_forward_hook(custom_hook)
             inputs = processor(text=[query], images=[adv_img], return_tensors="pt").to("cuda", torch.float16)
             generate_ids = model.generate(**inputs, do_sample=True, max_length=256, temperature=0.2, top_p=0.9,)
             response = processor.decode(generate_ids[0, inputs["input_ids"].shape[1]:], skip_special_tokens=True)
@@ -144,6 +144,9 @@ for index, toxic_prompt in tqdm(enumerate(toxic_prompts)):
         output_texts.append(steered_texts)
 
 data = pd.DataFrame(output_texts, columns=steer_types)
+
+os.makedirs('./results/responses/qwen/toxic/', exist_ok=True)
+
 data.to_csv('./results/responses/qwen/toxic/detoxify_qwen_{}_{}_{}_alpha_{}.csv'.format(
                 args.eval, args.feat_type, args.attack_type, int(args.alpha)), index=False)
 

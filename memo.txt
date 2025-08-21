@@ -1,0 +1,14 @@
+# 1. Attribution 추출 (모든 카테고리)
+python extract_attr/extract_qwen_siuo_attr.py --category all --task_type gen
+
+# 2. 특정 카테고리만 처리
+python extract_attr/extract_qwen_siuo_attr.py --category "self-harm" --max_samples 10
+
+# 3. Activation 추출
+python extract_act/extracting_activations_qwen_siuo.py --category "self-harm" --task_type gen
+
+# 4. Steering 평가
+python steer_eval/steering_qwen_siuo.py --category "self-harm" --alpha 20.0
+
+# 5. 통합 테스트
+bash scripts/test_siuo.sh

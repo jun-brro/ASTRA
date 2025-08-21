@@ -65,7 +65,7 @@ for index in range(len(image_list)):
     prefix = prompt_wrapper.minigpt4_chatbot_prompt    
     query = prefix % ('What is the image about?')
 
-    with torch.no_grad(), torch.cuda.amp.autocast():
+    with torch.no_grad(), torch.amp.autocast('cuda'):
         prompt_wrap = prompt_wrapper.Prompt(model=model, 
                                             text_prompts=[query],
                                             img_prompts=[reference_img])

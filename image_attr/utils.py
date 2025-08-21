@@ -150,7 +150,7 @@ def _get_response_logit_probs(dataset, model, tokenizer, response_length, batch_
     for batch in tqdm(loader):
         batch = {key: value.to(model.device) for key, value in batch.items()}
         
-        with ch.no_grad(), ch.cuda.amp.autocast():
+        with ch.no_grad(), ch.amp.autocast('cuda'):
             output = model(**batch)
         
         logits = output.logits[:, -(response_length + 1) : -1]
@@ -168,7 +168,7 @@ def _get_vlm_response_logit_probs(dataset, model, processor, tokenizer, response
     start_index = 0
     logit_probs = ch.zeros((len(dataset), response_length), device=model.device)
     for index, batch in tqdm(enumerate(dataset)):
-        with ch.no_grad(), ch.cuda.amp.autocast():
+        with ch.no_grad(), ch.amp.autocast('cuda'):
   
             inputs = processor(images=batch['input_img'], text=batch['input_prompt'], return_tensors="pt").to(device="cuda", dtype=ch.float16)  
             output = model(**inputs, output_hidden_states=True)
@@ -189,7 +189,7 @@ def _get_minigpt_response_logit_probs(dataset, model, processor, tokenizer, resp
     start_index = 0
     logit_probs = ch.zeros((len(dataset), response_length), device=model.device)
     for index, batch in tqdm(enumerate(dataset)):
-        with ch.no_grad(), ch.cuda.amp.autocast():
+        with ch.no_grad(), ch.amp.autocast('cuda'):
             img_prompt = [processor(batch['input_img']).unsqueeze(0).to('cuda')]
             prompt_wrap = prompt_wrapper_minigpt.Prompt(model=model, text_prompts=[batch['input_prompt']], img_prompts=[img_prompt])
             output = model.llama_model(inputs_embeds=prompt_wrap.context_embs[0])
@@ -210,7 +210,7 @@ def _get_llava_response_logit_probs(dataset, model, processor, tokenizer, respon
     start_index = 0
     logit_probs = ch.zeros((len(dataset), response_length), device=model.device)
     for index, batch in tqdm(enumerate(dataset)):
-        with ch.no_grad(), ch.cuda.amp.autocast():
+        with ch.no_grad(), ch.amp.autocast('cuda'):
             inputs = processor(text=batch['input_prompt'], images=batch['input_img'], return_tensors="pt").to("cuda", ch.float16)
             output = model(**inputs, output_hidden_states=True)
             
@@ -230,7 +230,7 @@ def _get_qwen_response_logit_probs(dataset, model, processor, tokenizer, respons
     start_index = 0
     logit_probs = ch.zeros((len(dataset), response_length), device=model.device)
     for index, batch in tqdm(enumerate(dataset)):
-        with ch.no_grad(), ch.cuda.amp.autocast():
+        with ch.no_grad(), ch.amp.autocast('cuda'):
             inputs = processor(text=[batch['input_prompt']], images=[batch['input_img']], padding=True, return_tensors='pt').to(model.device)
             output = model(**inputs, output_hidden_states=True)
         

@@ -67,7 +67,7 @@ for attack_type in attack_types:
         prefix = prompt_wrapper.minigpt4_chatbot_prompt    
         query = prefix
 
-        with torch.no_grad(), torch.cuda.amp.autocast():
+        with torch.no_grad(), torch.amp.autocast('cuda'):
             img = [processor(img).unsqueeze(0).to('cuda')]
             attr = [processor(attr).unsqueeze(0).to('cuda')]
             mask = [processor(mask).unsqueeze(0).to('cuda')]

@@ -128,7 +128,7 @@ for index, row in tqdm(questions.iterrows(), total=len(questions)):
         qs = cur_prompt = question
         
         query = "USER: <image>\n{}. Please do not give any explanation. Answer with the option's letter from the given choices directly.\nASSISTANT:".format(qs)
-        with torch.no_grad(), torch.cuda.amp.autocast():    
+        with torch.no_grad(), torch.amp.autocast('cuda'):    
             def create_custom_forward_hook(steer_vector, reference_vector, steer_type, alpha):
                 def custom_forward_hook(module, input, output):
                     R_feat = output[0][:, -1, :]
@@ -152,7 +152,7 @@ for index, row in tqdm(questions.iterrows(), total=len(questions)):
             alphas = [args.alpha, 0]
             for i, (steer_type, alpha) in enumerate(zip(steer_types, alphas)):
                 custom_hook = create_custom_forward_hook(steer_activations, reference_activations, steer_type, alpha)
-                hook = model.language_model.base_model.layers[args.steer_layer-1].register_forward_hook(custom_hook)
+                hook = model.language_model.language_model.layers[args.steer_layer-1].register_forward_hook(custom_hook)
                 inputs = processor(text=query, images=image, return_tensors="pt").to("cuda", torch.float16)
                 generate_ids = model.generate(**inputs, do_sample=True, max_length=1024, temperature=0.2, top_p=0.9,)
                 steered_text = processor.decode(generate_ids[0, inputs["input_ids"].shape[1]:], skip_special_tokens=False)

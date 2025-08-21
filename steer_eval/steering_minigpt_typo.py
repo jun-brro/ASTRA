@@ -119,7 +119,7 @@ for attack_type in attack_types:
         
         prefix = prompt_wrapper.minigpt4_chatbot_prompt    
         query = prefix % query
-        with torch.no_grad(), torch.cuda.amp.autocast():    
+        with torch.no_grad(), torch.amp.autocast('cuda'):    
             
             def create_custom_forward_hook(steer_vector, reference_vector, steer_type, alpha):
                 def custom_forward_hook(module, input, output):
@@ -144,7 +144,7 @@ for attack_type in attack_types:
             alphas = [0, args.alpha]
             for i, (steer_type, alpha) in enumerate(zip(steer_types, alphas)):
                 custom_hook = create_custom_forward_hook(steer_activations, reference_activations, steer_type, alpha)
-                hook = model.llama_model.base_model.layers[args.steer_layer-1].register_forward_hook(custom_hook)
+                hook = model.llama_model.language_model.layers[args.steer_layer-1].register_forward_hook(custom_hook)
                 
                 img_prompt = [processor(adv_img).unsqueeze(0).to('cuda')]
                 prompt_wrap = prompt_wrapper.Prompt(model=model, text_prompts=[query], img_prompts=[img_prompt])

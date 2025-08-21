@@ -56,7 +56,7 @@ for attack_type in attack_types:
                     messages, tokenize=False, add_generation_prompt=True
                 )
         
-        with torch.no_grad(), torch.cuda.amp.autocast(): 
+        with torch.no_grad(), torch.amp.autocast('cuda'): 
             inputs = processor(text=[text_prompt_template]*2, images=[img, mask], padding=True, return_tensors="pt").to(model.device)
             output = model(**inputs, output_hidden_states=True)
 
